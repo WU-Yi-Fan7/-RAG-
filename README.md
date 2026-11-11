@@ -384,4 +384,3 @@ Java 扩展（redhat.java 1.59+）要求用 **JDK 25 及以上** 启动语言服
 | --- | --- |
 | 密码明文存储 | 当前登录/注册直接比较明文，`PasswordUtils` 尚未接入，建议改为 BCrypt |
 | 敏感配置外置 | 数据库密码、Redis 密码、智谱 API Key 目前写在 `application.properties`，建议改用环境变量或配置中心 |
-| 令牌校验 | 仅做 JWT 自校验，未校验数据库 `is_valid`，登出后旧令牌在有效期内仍可用 |
